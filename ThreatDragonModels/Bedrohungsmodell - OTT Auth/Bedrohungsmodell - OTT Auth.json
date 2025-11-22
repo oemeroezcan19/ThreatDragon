@@ -1686,7 +1686,7 @@
         "cells": [
           {
             "position": {
-              "x": 1630,
+              "x": 1620,
               "y": 70
             },
             "size": {
@@ -1760,19 +1760,12 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
-              "x": -122.5,
-              "y": 160
+              "x": -212.5,
+              "y": 570
             },
             "size": {
               "width": 112.5,
@@ -1888,8 +1881,8 @@
           },
           {
             "position": {
-              "x": 1360,
-              "y": 1060
+              "x": 1157.5,
+              "y": 1210
             },
             "size": {
               "width": 112.5,
@@ -2365,8 +2358,8 @@
           },
           {
             "position": {
-              "x": 39.99999999999568,
-              "y": 550.0000000000008
+              "x": 970,
+              "y": 630
             },
             "size": {
               "width": 340,
@@ -2605,8 +2598,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": 520.0000000000008
+              "x": 580,
+              "y": 655.0000000000008
             },
             "size": {
               "width": 210,
@@ -2845,8 +2838,8 @@
           },
           {
             "position": {
-              "x": 1140,
-              "y": 1160
+              "x": 1410,
+              "y": 980
             },
             "size": {
               "width": 180,
@@ -2961,51 +2954,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "1. CRedentials",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "1. CRedentials"
-            ],
-            "id": "977e5c6d-811b-41c6-9884-d0199a3f0f12",
-            "source": {
-              "x": -32,
-              "y": 160
-            },
-            "target": {
-              "x": 150,
-              "y": 200
             }
           },
           {
@@ -3244,6 +3192,342 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "4. Anfrage Routing-Information (Telefonnummer)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "4. Anfrage Routing-Information (Telefonnummer)"
+            ],
+            "id": "d0ffd392-189c-4d14-96aa-21c4bdef68c4",
+            "source": {
+              "x": 1150,
+              "y": 120
+            },
+            "target": {
+              "cell": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "vertices": [
+              {
+                "x": 1470,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "5. Routing-Lookup (Telefonnummer)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "5. Routing-Lookup (Telefonnummer)"
+            ],
+            "id": "913c441f-198b-4a40-8f91-54d16d95032c",
+            "source": {
+              "cell": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
+              "port": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+            },
+            "target": {
+              "cell": "97394c39-97f4-4ac2-8b50-41094774ba69",
+              "port": "253e72e8-a1e8-429a-be59-b159a8c511eb"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "6. Routing-Information (zuständiger Telefonanbieter)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "6. Routing-Information (zuständiger Telefonanbieter)"
+            ],
+            "id": "adf08976-daca-42d3-9a35-55cd3f8a7c78",
+            "source": {
+              "cell": "97394c39-97f4-4ac2-8b50-41094774ba69",
+              "port": "9dafd355-74f4-4133-8968-336bda384908"
+            },
+            "target": {
+              "cell": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "7. Antwort Routing (Kunden-Telefonanbieter)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "7. Antwort Routing (Kunden-Telefonanbieter)"
+            ],
+            "id": "54189ffa-feed-4714-b981-71c267415bce",
+            "source": {
+              "cell": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
+              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
+            },
+            "target": {
+              "cell": "e97e08ba-1c8a-46a2-89e2-9b8715a3f648",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "vertices": [
+              {
+                "x": 1380,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "8. Weiterleitung OTT (Telefonnummer, OTT-Text, Provider-Info)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "8. Weiterleitung OTT (Telefonnummer, OTT-Text, Provider-Info)"
+            ],
+            "id": "4d3a97c5-654e-475a-85ba-d0dfd85773c2",
+            "source": {
+              "cell": "e97e08ba-1c8a-46a2-89e2-9b8715a3f648",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "target": {
+              "cell": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "vertices": [
+              {
+                "x": 1500,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "9. Zustellanforderung für OTT (Routing zum OTT-Service von Allsecure)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "9. Zustellanforderung für OTT (Routing zum OTT-Service von Allsecure)"
+            ],
+            "id": "d8c4d14a-75ac-4c79-a755-4b9660b82325",
+            "source": {
+              "cell": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
+              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
+            },
+            "target": {
+              "cell": "4ec5a7a4-ceb8-48b5-8bc3-2f67c041ac85",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "10. Zustellstatus / Quittung",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "10. Zustellstatus / Quittung"
+            ],
+            "id": "222d3121-a5e9-4f3c-96c7-578d4c51138b",
+            "source": {
+              "x": 1224,
+              "y": 700
+            },
+            "target": {
+              "cell": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -3259,23 +3543,78 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "cf40ce8e-8a70-4331-8007-44472a96d84b",
+            "id": "8724c6dd-589f-40ac-a10a-2250b9c6d387",
             "source": {
-              "x": 1180,
-              "y": 170
+              "cell": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
+              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
             },
             "target": {
-              "cell": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
-              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
+              "cell": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
+              "port": "098efc91-d594-45cd-9269-d39a186aa814"
             },
             "vertices": [
               {
-                "x": 1430,
-                "y": 210
+                "x": 740,
+                "y": 1000
               },
               {
-                "x": 1450,
-                "y": 210
+                "x": 510,
+                "y": 990
+              },
+              {
+                "x": 40,
+                "y": 920
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "1. Credentials"
+            ],
+            "id": "2214fa80-8814-4b2d-8a1a-2fed3423f200",
+            "source": {
+              "cell": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
+              "port": "0d690f7d-cb52-4ef3-a6a6-9585e8ad160e"
+            },
+            "target": {
+              "cell": "b1009a63-863b-4f8d-b289-8cf05687788b",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "vertices": [
+              {
+                "x": 40,
+                "y": 180
               }
             ]
           },
@@ -3405,8 +3744,8 @@
           },
           {
             "position": {
-              "x": 990,
-              "y": 380
+              "x": 625,
+              "y": 330
             },
             "size": {
               "width": 120,
@@ -3529,8 +3868,8 @@
           },
           {
             "position": {
-              "x": 1140,
-              "y": 520.0000000000008
+              "x": 700,
+              "y": 440
             },
             "size": {
               "width": 120,
@@ -3653,8 +3992,8 @@
           },
           {
             "position": {
-              "x": 1715,
-              "y": 610.0000000000008
+              "x": 2270,
+              "y": 190
             },
             "size": {
               "width": 120,
