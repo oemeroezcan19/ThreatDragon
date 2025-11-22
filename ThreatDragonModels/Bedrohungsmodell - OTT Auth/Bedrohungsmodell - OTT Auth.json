@@ -1683,7 +1683,56 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.5.0",
-        "cells": []
+        "cells": [
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Allsecure Internes Netz",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Allsecure Internes Netz"
+            ],
+            "id": "2d872c42-26a0-4fb1-af8e-41a735a2516c",
+            "source": {
+              "x": 180,
+              "y": 500
+            },
+            "target": {
+              "x": 180,
+              "y": 500
+            },
+            "vertices": [
+              {
+                "x": 80,
+                "y": 410
+              },
+              {
+                "x": 70,
+                "y": 100
+              },
+              {
+                "x": 210,
+                "y": 50
+              },
+              {
+                "x": 910,
+                "y": 50
+              },
+              {
+                "x": 1080,
+                "y": 390
+              }
+            ]
+          }
+        ]
       }
     ],
     "reviewer": "Georg Neugebauer",
