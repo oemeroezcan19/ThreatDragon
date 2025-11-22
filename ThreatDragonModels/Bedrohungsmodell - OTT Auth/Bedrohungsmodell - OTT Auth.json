@@ -1760,6 +1760,13 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2010,8 +2017,8 @@
                 "text": "Login-System \n(WebApp)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2108,12 +2115,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "255da4bf-4e7f-44cb-9a83-58c5d138bfdf",
+                  "title": "Gestohlene Zugangsdaten / Identitäts­spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Ein Angreifer erlangt gültige Zugangsdaten eines legitimen Nutzers (z.B. über Phishing oder Credential-Stuffing) und meldet sich damit beim Login-System an. Aus Sicht des Systems erscheint der Angreifer als legitimer Benutzer und kann den 2-Faktor-Prozess anstoßen und ggf. Kontodaten einsehen oder verändern.\n\nCAPEC-151: Identity Spoofing refers to the action of assuming (i.e., taking on) the identity of some other entity (human or non-human) and then using that identity to accomplish a goal. An adversary may craft messages that appear to come from a different principle or use stolen / spoofed authentication credentials.\n\nTA0001 - Initial access: The adversary is trying to get into your network.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 104,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2250,8 +2279,8 @@
                 "text": "Telefonnummern- API-Gateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2348,12 +2377,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "b853a2cb-f2a0-41d7-84a7-d11d78531c41",
+                  "title": "Manipulation des OTT-Inhalts",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Das Telefonnummern-API-Gateway nimmt vom 2-Faktor-Dienst OTT-Nachrichten und Ziel-Telefonnummern entgegen und leitet sie an den Telco-Dienst weiter. Falls hier Eingaben nicht korrekt validiert oder Verbindungen unzureichend geschützt sind, kann ein Angreifer (z.B. durch kompromittierten internen Account oder AiTM im internen Netz) OTT-Inhalte oder Zielnummern verändern, bevor sie weitergeleitet werden. Dadurch wird etwa ein anderer Empfänger mit einem manipulierten OTT versorgt oder der OTT-Text wird so verändert, dass der Nutzer getäuscht wird.\n\nCAPEC-153: An attacker exploits a weakness in input validation by controlling the format, structure, and composition of data to an input-processing interface. By supplying input of a non-standard or unexpected form an attacker can adversely impact the security of the target.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 105,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -4096,17 +4147,7 @@
               "cell": "a9a14cdc-3aeb-4317-8415-d3a555528f0a",
               "port": "253e72e8-a1e8-429a-be59-b159a8c511eb"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "position": {
@@ -4733,7 +4774,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 11,
-    "threatTop": 102
+    "threatTop": 105
   },
   "version": "2.5.0"
 }
