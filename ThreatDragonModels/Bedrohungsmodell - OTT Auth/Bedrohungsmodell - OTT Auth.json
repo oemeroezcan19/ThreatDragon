@@ -1881,8 +1881,8 @@
           },
           {
             "position": {
-              "x": 1157.5,
-              "y": 1210
+              "x": -60,
+              "y": 1060
             },
             "size": {
               "width": 112.5,
@@ -2478,8 +2478,8 @@
           },
           {
             "position": {
-              "x": 409.9999999999991,
-              "y": 510.0000000000008
+              "x": 110,
+              "y": 470
             },
             "size": {
               "width": 200,
@@ -2598,8 +2598,8 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 655.0000000000008
+              "x": 715,
+              "y": 555.0000000000008
             },
             "size": {
               "width": 210,
@@ -3528,7 +3528,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "11. OTT-Nachricht ans Handy",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3541,7 +3541,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "11. OTT-Nachricht ans Handy"
             ],
             "id": "8724c6dd-589f-40ac-a10a-2250b9c6d387",
             "source": {
@@ -3617,6 +3617,440 @@
                 "y": 180
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "12. Eingabe OTT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "12. Eingabe OTT"
+            ],
+            "id": "0d3204ca-bde6-4c5d-94a4-95895b27bfaa",
+            "source": {
+              "cell": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
+              "port": "cb3fcdf7-a67b-4811-b0c4-d239dd6e45f2"
+            },
+            "target": {
+              "cell": "b1009a63-863b-4f8d-b289-8cf05687788b",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "vertices": [
+              {
+                "x": 90,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "13. OTT-Validierungsanfrage“ (enthält OTT & Benutzer-ID)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "13. OTT-Validierungsanfrage“ (enthält OTT & Benutzer-ID)"
+            ],
+            "id": "d8f4e220-1184-477d-b485-56134f3c3c7e",
+            "source": {
+              "cell": "b1009a63-863b-4f8d-b289-8cf05687788b",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "target": {
+              "cell": "3c6e6c2c-9346-45de-bf78-e50523b10be2",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "14. Ergebnis Authentifizierung (erfolgreich/fehlgeschlagen)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "14. Ergebnis Authentifizierung (erfolgreich/fehlgeschlagen)"
+            ],
+            "id": "0cab6d5d-c9ec-4096-95b6-f38460d2179d",
+            "source": {
+              "cell": "3c6e6c2c-9346-45de-bf78-e50523b10be2",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "target": {
+              "cell": "b1009a63-863b-4f8d-b289-8cf05687788b",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "15. Login-Ergebnis / Session-Token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "15. Login-Ergebnis / Session-Token"
+            ],
+            "id": "d82a34a6-6b7e-48ae-8d84-cae06431db98",
+            "source": {
+              "cell": "b1009a63-863b-4f8d-b289-8cf05687788b",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "target": {
+              "cell": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
+              "port": "48a0ccba-f63c-40ae-ad4d-16814af8c1f3"
+            },
+            "vertices": [
+              {
+                "x": -130,
+                "y": 95
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log-Eintrag Authentifizierung",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Log-Eintrag Authentifizierung"
+            ],
+            "id": "513dedfb-1a23-4d9e-95e6-27ec80a2b078",
+            "source": {
+              "cell": "3c6e6c2c-9346-45de-bf78-e50523b10be2",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "target": {
+              "cell": "df6763e9-fc63-4535-9cca-353ac2db6fd8",
+              "port": "d93c97d2-3a74-4288-b8d3-8ad466224160"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Logexport 2-Faktor-Dienst",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Logexport 2-Faktor-Dienst"
+            ],
+            "id": "f912efc2-42b1-4cb0-9eb2-5b2d42dd9652",
+            "source": {
+              "cell": "df6763e9-fc63-4535-9cca-353ac2db6fd8",
+              "port": "9dafd355-74f4-4133-8968-336bda384908"
+            },
+            "target": {
+              "cell": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Korrelierte Sicherheitsereignisse / Reports",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Korrelierte Sicherheitsereignisse / Reports"
+            ],
+            "id": "b9876d09-dc70-4456-a9cd-53c464decbc2",
+            "source": {
+              "cell": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
+              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
+            },
+            "target": {
+              "cell": "59313419-f191-40ac-a667-a04e8b8189e1",
+              "port": "d93c97d2-3a74-4288-b8d3-8ad466224160"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Signierter & verschlüsselter SIEM-Report (wöchentlich)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Signierter & verschlüsselter SIEM-Report (wöchentlich)"
+            ],
+            "id": "a643cd7b-158c-4784-8c03-8682d6dc3731",
+            "source": {
+              "cell": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
+              "port": "e7544144-3a28-4c23-bf13-27e7b312f428"
+            },
+            "target": {
+              "cell": "af42a09d-94d6-456c-872b-50245e3d2b99",
+              "port": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "E-Mail mit SIEM-Report",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "E-Mail mit SIEM-Report"
+            ],
+            "id": "a16cb5eb-6893-416e-98bc-8e552c243398",
+            "source": {
+              "cell": "af42a09d-94d6-456c-872b-50245e3d2b99",
+              "port": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+            },
+            "target": {
+              "cell": "bcd78e73-ba3b-4f4a-afac-b957e485c7e3",
+              "port": "cb3fcdf7-a67b-4811-b0c4-d239dd6e45f2"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -3744,8 +4178,8 @@
           },
           {
             "position": {
-              "x": 625,
-              "y": 330
+              "x": 840,
+              "y": 360
             },
             "size": {
               "width": 120,
@@ -3868,8 +4302,8 @@
           },
           {
             "position": {
-              "x": 700,
-              "y": 440
+              "x": 580,
+              "y": 760
             },
             "size": {
               "width": 120,
