@@ -1738,8 +1738,8 @@
           },
           {
             "position": {
-              "x": 59.99999999999909,
-              "y": 49.999999999999204
+              "x": 69.99999999999909,
+              "y": 70
             },
             "size": {
               "width": 1120,
@@ -1994,13 +1994,723 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -10,
+              "y": 95
             },
-            "tools": {
+            "size": {
+              "width": 490,
+              "height": 170
+            },
+            "attrs": {
+              "text": {
+                "text": "Login-System (WebApp)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "b1009a63-863b-4f8d-b289-8cf05687788b",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login-System (WebApp)",
+              "description": "Prüfen Usernamen/Passwort. Starten von AUTH-Challange und empfangen von OTT vom Nutzer",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 270,
+              "y": 90
+            },
+            "size": {
+              "width": 430,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "2-Faktor\n-Autentiefizierungsdienst"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "3c6e6c2c-9346-45de-bf78-e50523b10be2",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "2-Faktor\n-Autentiefizierungsdienst",
+              "description": "Erzeugung von OTT, Versendung von OTT über Telco Schnittstelle. Vergleich von eingegeben OTT und schreiben von Logs",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 550,
+              "y": 80
+            },
+            "size": {
+              "width": 360,
+              "height": 200
+            },
+            "attrs": {
+              "text": {
+                "text": "Telefonnummern- API-Gateway"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "e97e08ba-1c8a-46a2-89e2-9b8715a3f648",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Telefonnummern- API-Gateway",
+              "description": "Schnittstelle zum externen Routing Dienst und Kundentelefonanbieter",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 69.99999999999909,
+              "y": 300.0000000000008
+            },
+            "size": {
+              "width": 340,
+              "height": 180
+            },
+            "attrs": {
+              "text": {
+                "text": "Allsecure, Mobilphone\nund OTT-Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "4ec5a7a4-ceb8-48b5-8bc3-2f67c041ac85",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Allsecure, Mobilphone\nund OTT-Service",
+              "description": "Interner OTT-Service von den Handys der Kunden",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 385,
+              "y": 290.0000000000008
+            },
+            "size": {
+              "width": 200,
+              "height": 190
+            },
+            "attrs": {
+              "text": {
+                "text": "Allsecure Mail-Server"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "af42a09d-94d6-456c-872b-50245e3d2b99",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "Allsecure Mail-Server",
+              "description": "Versendet signierte & verschlüsselte Mails mit SIEM-Report an Management",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 635,
+              "y": 290.0000000000008
+            },
+            "size": {
+              "width": 210,
+              "height": 190
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+                },
+                {
+                  "group": "right",
+                  "id": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ad410f15-2105-4f27-8cdc-c6b1332d9f86"
+                },
+                {
+                  "group": "left",
+                  "id": "e7544144-3a28-4c23-bf13-27e7b312f428"
+                }
+              ]
+            },
+            "id": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ]
