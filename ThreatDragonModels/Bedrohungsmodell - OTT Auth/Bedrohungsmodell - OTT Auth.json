@@ -4072,7 +4072,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Telefonnummern auslesen",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4085,23 +4085,28 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Telefonnummern auslesen"
             ],
-            "id": "f6f488b0-d49f-48d7-bd2a-c51569810c64",
+            "id": "93eb028b-e9c9-4a73-8b55-fc96de5c5cff",
             "source": {
-              "x": 1570,
-              "y": 1030
+              "cell": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
+              "port": "96fdceaf-896d-46b6-bdc6-0063c983704a"
             },
             "target": {
               "cell": "a9a14cdc-3aeb-4317-8415-d3a555528f0a",
               "port": "253e72e8-a1e8-429a-be59-b159a8c511eb"
             },
-            "vertices": [
-              {
-                "x": 1650,
-                "y": 1060
-              }
-            ]
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -4601,8 +4606,8 @@
           },
           {
             "position": {
-              "x": 1690,
-              "y": 1030
+              "x": 1670,
+              "y": 1260
             },
             "size": {
               "width": 190,
