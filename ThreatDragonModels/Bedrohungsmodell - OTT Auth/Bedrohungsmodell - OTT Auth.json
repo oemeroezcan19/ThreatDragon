@@ -1685,52 +1685,323 @@
         "version": "2.5.0",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
+            "position": {
+              "x": 1260,
+              "y": 40.000000000000796
+            },
+            "size": {
+              "width": 1020,
+              "height": 440
+            },
+            "attrs": {
+              "label": {
+                "text": "Telco - Dienst für Telefonnummernauflösung"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "20569be6-d1e2-4ada-903d-01567df7fec8",
+            "zIndex": -1,
             "data": {
-              "type": "tm.Boundary",
-              "name": "Allsecure Internes Netz",
+              "type": "tm.BoundaryBox",
+              "name": "Telco - Dienst für Telefonnummernauflösung",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 670,
+              "y": 539.9999999999999
             },
-            "labels": [
-              "Allsecure Internes Netz"
-            ],
-            "id": "2d872c42-26a0-4fb1-af8e-41a735a2516c",
-            "source": {
-              "x": 180,
-              "y": 500
+            "size": {
+              "width": 920,
+              "height": 540
             },
-            "target": {
-              "x": 180,
-              "y": 500
-            },
-            "vertices": [
-              {
-                "x": 80,
-                "y": 410
-              },
-              {
-                "x": 70,
-                "y": 100
-              },
-              {
-                "x": 210,
-                "y": 50
-              },
-              {
-                "x": 910,
-                "y": 50
-              },
-              {
-                "x": 1080,
-                "y": 390
+            "attrs": {
+              "label": {
+                "text": "Telefonanbieter"
               }
-            ]
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "908f17fb-2bff-4254-a2e0-0bea0324a554",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Telefonanbieter",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 59.99999999999909,
+              "y": 49.999999999999204
+            },
+            "size": {
+              "width": 1120,
+              "height": 430
+            },
+            "attrs": {
+              "label": {
+                "text": "Firmennetz Allsecure"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "17483f68-8a8b-43d6-9b3c-ed4de1d797ee",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Firmennetz Allsecure",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 351,
+              "y": 540
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0d690f7d-cb52-4ef3-a6a6-9585e8ad160e"
+                },
+                {
+                  "group": "right",
+                  "id": "cb3fcdf7-a67b-4811-b0c4-d239dd6e45f2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "098efc91-d594-45cd-9269-d39a186aa814"
+                },
+                {
+                  "group": "left",
+                  "id": "48a0ccba-f63c-40ae-ad4d-16814af8c1f3"
+                }
+              ]
+            },
+            "id": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "User",
+              "description": "Meldet sich bei Allsecure an und empfängt OTT",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 340,
+              "y": 640
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Management\n"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "0d690f7d-cb52-4ef3-a6a6-9585e8ad160e"
+                },
+                {
+                  "group": "right",
+                  "id": "cb3fcdf7-a67b-4811-b0c4-d239dd6e45f2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "098efc91-d594-45cd-9269-d39a186aa814"
+                },
+                {
+                  "group": "left",
+                  "id": "48a0ccba-f63c-40ae-ad4d-16814af8c1f3"
+                }
+              ]
+            },
+            "id": "bcd78e73-ba3b-4f4a-afac-b957e485c7e3",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Management\n",
+              "description": "Erhält SIEM-Reports",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           }
         ]
       }
