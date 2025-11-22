@@ -1686,8 +1686,8 @@
         "cells": [
           {
             "position": {
-              "x": 1240,
-              "y": 60
+              "x": 1900,
+              "y": 40.000000000000796
             },
             "size": {
               "width": 1020,
@@ -1712,8 +1712,8 @@
           },
           {
             "position": {
-              "x": 670,
-              "y": 539.9999999999999
+              "x": 1030,
+              "y": 940
             },
             "size": {
               "width": 920,
@@ -1738,12 +1738,12 @@
           },
           {
             "position": {
-              "x": 40,
-              "y": 65
+              "x": 39.99999999999568,
+              "y": 65.00000000000847
             },
             "size": {
-              "width": 1120,
-              "height": 430
+              "width": 1580,
+              "height": 840
             },
             "attrs": {
               "label": {
@@ -1764,8 +1764,8 @@
           },
           {
             "position": {
-              "x": 351,
-              "y": 540
+              "x": -122.5,
+              "y": 160
             },
             "size": {
               "width": 112.5,
@@ -1881,8 +1881,8 @@
           },
           {
             "position": {
-              "x": 340,
-              "y": 640
+              "x": 1360,
+              "y": 1060
             },
             "size": {
               "width": 112.5,
@@ -2007,7 +2007,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Login-System (WebApp)"
+                "text": "Login-System \n(WebApp)"
               },
               "body": {
                 "stroke": "#333333",
@@ -2103,7 +2103,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Login-System (WebApp)",
+              "name": "Login-System \n(WebApp)",
               "description": "Prüfen Usernamen/Passwort. Starten von AUTH-Challange und empfangen von OTT vom Nutzer",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2118,7 +2118,7 @@
           },
           {
             "position": {
-              "x": 270,
+              "x": 470,
               "y": 90
             },
             "size": {
@@ -2238,8 +2238,8 @@
           },
           {
             "position": {
-              "x": 550,
-              "y": 80
+              "x": 835,
+              "y": 265
             },
             "size": {
               "width": 360,
@@ -2358,8 +2358,8 @@
           },
           {
             "position": {
-              "x": 69.99999999999909,
-              "y": 300.0000000000008
+              "x": 39.99999999999568,
+              "y": 550.0000000000008
             },
             "size": {
               "width": 340,
@@ -2478,8 +2478,8 @@
           },
           {
             "position": {
-              "x": 385,
-              "y": 290.0000000000008
+              "x": 409.9999999999991,
+              "y": 510.0000000000008
             },
             "size": {
               "width": 200,
@@ -2598,8 +2598,8 @@
           },
           {
             "position": {
-              "x": 635,
-              "y": 290.0000000000008
+              "x": 910,
+              "y": 520.0000000000008
             },
             "size": {
               "width": 210,
@@ -2718,8 +2718,8 @@
           },
           {
             "position": {
-              "x": 1294,
-              "y": 95
+              "x": 1974,
+              "y": 110
             },
             "size": {
               "width": 210,
@@ -2838,8 +2838,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 620
+              "x": 1140,
+              "y": 1160
             },
             "size": {
               "width": 180,
@@ -2957,128 +2957,104 @@
             }
           },
           {
-            "position": {
-              "x": 1780,
-              "y": 140
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
+            "shape": "flow",
             "attrs": {
-              "text": {
-                "text": "Routing-Information-DB"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
                 "strokeDasharray": null
               }
             },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "d93c97d2-3a74-4288-b8d3-8ad466224160"
-                },
-                {
-                  "group": "right",
-                  "id": "afd482c2-d95d-4163-8a05-a971bc7c0842"
-                },
-                {
-                  "group": "bottom",
-                  "id": "9dafd355-74f4-4133-8968-336bda384908"
-                },
-                {
-                  "group": "left",
-                  "id": "253e72e8-a1e8-429a-be59-b159a8c511eb"
-                }
-              ]
-            },
-            "id": "6878230a-8f2d-41b7-8cc0-e88fbbdcc26a",
+            "width": 200,
+            "height": 100,
             "zIndex": 10,
+            "connector": "smooth",
             "data": {
-              "type": "tm.Store",
-              "name": "Routing-Information-DB",
+              "type": "tm.Flow",
+              "name": "1. CRedentials",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
+              "isBidirectional": false,
               "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "isPublicNetwork": false,
+              "protocol": "",
               "threats": []
+            },
+            "labels": [
+              "1. CRedentials"
+            ],
+            "id": "977e5c6d-811b-41c6-9884-d0199a3f0f12",
+            "source": {
+              "x": -32,
+              "y": 160
+            },
+            "target": {
+              "x": 150,
+              "y": 200
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. Auth Challenge (Benutzer-ID, Telefonnummer)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "2. Auth Challenge (Benutzer-ID, Telefonnummer)"
+            ],
+            "id": "6d98c19a-8379-4581-9815-902a292b3ce3",
+            "source": {
+              "x": 317,
+              "y": 160
+            },
+            "target": {
+              "x": 590,
+              "y": 180
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 210
+              },
+              {
+                "x": 520,
+                "y": 160
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -3115,21 +3091,136 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "948121d2-7c67-4c8e-aae2-302e136f8e88",
+            "id": "fbfec9c4-d7a9-4486-9840-91a6b19fe97f",
             "source": {
-              "cell": "6878230a-8f2d-41b7-8cc0-e88fbbdcc26a",
-              "port": "253e72e8-a1e8-429a-be59-b159a8c511eb"
+              "x": 190,
+              "y": 250
             },
             "target": {
-              "x": 1780,
-              "y": 170
+              "x": 290,
+              "y": 350
             },
-            "vertices": []
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
+            "vertices": [
+              {
+                "x": 290,
+                "y": 350
+              }
+            ]
           },
           {
             "position": {
-              "x": 920,
-              "y": 110
+              "x": 175,
+              "y": 380
             },
             "size": {
               "width": 120,
@@ -3252,8 +3343,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": 205
+              "x": 1340,
+              "y": 230.0000000000008
             },
             "size": {
               "width": 120,
@@ -3376,8 +3467,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": 328
+              "x": 1380,
+              "y": 360.0000000000008
             },
             "size": {
               "width": 120,
@@ -3500,8 +3591,8 @@
           },
           {
             "position": {
-              "x": 1780,
-              "y": 250
+              "x": 2350,
+              "y": 165
             },
             "size": {
               "width": 120,
@@ -3624,8 +3715,8 @@
           },
           {
             "position": {
-              "x": 1007,
-              "y": 640
+              "x": 1550,
+              "y": 1160
             },
             "size": {
               "width": 120,
@@ -3744,13 +3835,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
