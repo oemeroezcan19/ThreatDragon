@@ -2606,6 +2606,9 @@
               "height": 190
             },
             "attrs": {
+              "text": {
+                "text": "SIEM-System"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -2700,8 +2703,8 @@
             "zIndex": 7,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
-              "description": "",
+              "name": "SIEM-System",
+              "description": "Sammelt & korreliert Logs vom 2-Faktor-Dienst und vom Allsecure OTT Service, erzeugt wöchentliche Reports",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
