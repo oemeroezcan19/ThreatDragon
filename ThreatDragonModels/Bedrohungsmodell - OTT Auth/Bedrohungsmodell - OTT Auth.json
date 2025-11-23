@@ -2786,12 +2786,12 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Das SIEM sammelt sicherheitsrelevante Logs aus dem 2-Faktor-Dienst und dem OTT-Service und erzeugt wöchentliche Berichte ans Management. Wenn ein Angreifer zunächst mit einem normalen Benutzer-Account auf das SIEM zugreift (z.B. ein kompromittierter Admin-Assistent) und anschließend eine Schwachstelle in der SIEM-Software ausnutzt, kann er seine Rechte auf „SIEM-Admin“ oder sogar System-Root erhöhen.\n\nCAPEC-233: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nTA0004 - Privilege Escalation. The adversary is trying to gain higher-level permissions.\n\nD: 10\nR: 4\nE: 2\nA: 10\n\n",
-                  "mitigation": "",
+                  "description": "Das SIEM sammelt sicherheitsrelevante Logs aus dem 2-Faktor-Dienst und dem OTT-Service und erzeugt wöchentliche Berichte ans Management. Wenn ein Angreifer zunächst mit einem normalen Benutzer-Account auf das SIEM zugreift (z.B. ein kompromittierter Admin-Assistent) und anschließend eine Schwachstelle in der SIEM-Software ausnutzt, kann er seine Rechte auf „SIEM-Admin“ oder sogar System-Root erhöhen.\n\nCAPEC-233: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nTA0004 - Privilege Escalation. The adversary is trying to gain higher-level permissions.\n\nD: 10\nR: 4\nE: 2\nA: 10\n\nSeverity: Medium",
+                  "mitigation": "Maßnahme: Harte Zugangskontrolle zum SIEM, Härtung & Patch-Management, Trennung von Rollen\n\nUmsetzung von Maßnahmen: Role-Based Access Control und Vier-Augen-Prinzip\n\nDREA (reduziert)\nD: 6\nR: 2\nE: 1\nA: 6\n\nASVS V4.1 - Generic Web Service Security: This section addresses general web service security considerations and, consequently, basic web service hygiene practices",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 109,
-                  "score": ""
+                  "score": "15"
                 }
               ],
               "threatFrequency": {
@@ -2800,8 +2800,15 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 3
+                "elevationOfPrivilege": 4
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
