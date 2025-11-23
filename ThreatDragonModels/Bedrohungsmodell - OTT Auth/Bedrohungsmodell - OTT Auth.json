@@ -2522,14 +2522,14 @@
                   "id": "03c83a1d-c07c-4e84-bae1-d2a4f8f78b8d",
                   "title": "DoS gegen OTT-Service",
                   "status": "Open",
-                  "severity": "Critical",
+                  "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Der Allsecure-OTT-Service übernimmt das Versenden von OTT-Nachrichten an die Mobiltelefone. Ein Angreifer kann durch massive Anzahl gefälschter Auth-Anfragen oder durch speziell gestaltete, besonders ressourcenintensive Requests den OTT-Service überlasten (z.B. viele parallele OTT-Anfragen mit teuren Datenbank-Operationen).\n\nCAPEC-130: An adversary causes the target to allocate excessive resources to servicing the attackers' request, thereby reducing the resources available for legitimate services and degrading or denying services. Usually, this attack focuses on memory allocation, but any finite resource on the target could be the attacked, including bandwidth, processing cycles, or other resources. This attack does not attempt to force this allocation through a large number of requests (that would be Resource Depletion through Flooding) but instead uses one or a small number of requests that are carefully formatted to force the target to allocate excessive resources to service this request(s). Often this attack takes advantage of a bug in the target to cause the target to allocate resources vastly beyond what would be needed for a normal request.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nD: 10\nR: 9\nE: 8\nA: 10",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Der Allsecure-OTT-Service übernimmt das Versenden von OTT-Nachrichten an die Mobiltelefone. Ein Angreifer kann durch massive Anzahl gefälschter Auth-Anfragen oder durch speziell gestaltete, besonders ressourcenintensive Requests den OTT-Service überlasten (z.B. viele parallele OTT-Anfragen mit teuren Datenbank-Operationen).\n\nCAPEC-130: An adversary causes the target to allocate excessive resources to servicing the attackers' request, thereby reducing the resources available for legitimate services and degrading or denying services. Usually, this attack focuses on memory allocation, but any finite resource on the target could be the attacked, including bandwidth, processing cycles, or other resources. This attack does not attempt to force this allocation through a large number of requests (that would be Resource Depletion through Flooding) but instead uses one or a small number of requests that are carefully formatted to force the target to allocate excessive resources to service this request(s). Often this attack takes advantage of a bug in the target to cause the target to allocate resources vastly beyond what would be needed for a normal request.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nD: 10\nR: 9\nE: 8\nA: 10\n\nSeverity: Critical",
+                  "mitigation": "Maßnahme: Rate Limiting, Traffic-Filtering und Skalierung des OTT-Services\n\nUmsetzung der Maßnahme: Rate Limits, WAV/Reverse-Proxy mit DoS-Schutz und Skalierung in Bezug auf Load Balancing.\n\nDREA (reduziert): \nD: 7\nR: 5\nE: 4\nA: 7\n\nD3-ITF - Inbound Traffic Filtering: Restricting network traffic originating from untrusted networks destined towards a private host or enclave.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 108,
-                  "score": ""
+                  "score": "23"
                 }
               ],
               "threatFrequency": {
@@ -2537,7 +2537,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 2,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2787,7 +2787,7 @@
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Das SIEM sammelt sicherheitsrelevante Logs aus dem 2-Faktor-Dienst und dem OTT-Service und erzeugt wöchentliche Berichte ans Management. Wenn ein Angreifer zunächst mit einem normalen Benutzer-Account auf das SIEM zugreift (z.B. ein kompromittierter Admin-Assistent) und anschließend eine Schwachstelle in der SIEM-Software ausnutzt, kann er seine Rechte auf „SIEM-Admin“ oder sogar System-Root erhöhen.\n\nCAPEC-233: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nTA0004 - Privilege Escalation. The adversary is trying to gain higher-level permissions.\n\nD: 10\nR: 4\nE: 2\nA: 10\n\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 109,
@@ -2800,7 +2800,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
             }
           },
@@ -4330,13 +4330,6 @@
                 "informationDisclosure": 3,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
