@@ -2802,13 +2802,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 4
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
