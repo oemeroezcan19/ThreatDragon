@@ -1700,8 +1700,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "20569be6-d1e2-4ada-903d-01567df7fec8",
             "zIndex": -1,
+            "id": "20569be6-d1e2-4ada-903d-01567df7fec8",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Telco - Dienst für Telefonnummernauflösung",
@@ -1726,8 +1726,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "908f17fb-2bff-4254-a2e0-0bea0324a554",
             "zIndex": -1,
+            "id": "908f17fb-2bff-4254-a2e0-0bea0324a554",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Telefonanbieter",
@@ -1752,14 +1752,23 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "17483f68-8a8b-43d6-9b3c-ed4de1d797ee",
             "zIndex": -1,
+            "id": "17483f68-8a8b-43d6-9b3c-ed4de1d797ee",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Firmennetz Allsecure",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1783,6 +1792,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -1866,7 +1876,6 @@
               ]
             },
             "id": "a8185110-9e3f-49ec-a0be-38c52c02b95f",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -1900,6 +1909,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1983,7 +1993,6 @@
               ]
             },
             "id": "bcd78e73-ba3b-4f4a-afac-b957e485c7e3",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Management\n",
@@ -2017,6 +2026,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2100,7 +2110,6 @@
               ]
             },
             "id": "b1009a63-863b-4f8d-b289-8cf05687788b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Login-System \n(WebApp)",
@@ -2159,6 +2168,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2242,7 +2252,6 @@
               ]
             },
             "id": "3c6e6c2c-9346-45de-bf78-e50523b10be2",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "2-Faktor\n-Autentiefizierungsdienst",
@@ -2279,6 +2288,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2362,7 +2372,6 @@
               ]
             },
             "id": "e97e08ba-1c8a-46a2-89e2-9b8715a3f648",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Telefonnummern- API-Gateway",
@@ -2383,16 +2392,16 @@
                   "severity": "Low",
                   "type": "Tampering",
                   "description": "Das Telefonnummern-API-Gateway nimmt vom 2-Faktor-Dienst OTT-Nachrichten und Ziel-Telefonnummern entgegen und leitet sie an den Telco-Dienst weiter. Falls hier Eingaben nicht korrekt validiert oder Verbindungen unzureichend geschützt sind, kann ein Angreifer (z.B. durch kompromittierten internen Account oder AiTM im internen Netz) OTT-Inhalte oder Zielnummern verändern, bevor sie weitergeleitet werden. Dadurch wird etwa ein anderer Empfänger mit einem manipulierten OTT versorgt oder der OTT-Text wird so verändert, dass der Nutzer getäuscht wird.\n\nCAPEC-153: An attacker exploits a weakness in input validation by controlling the format, structure, and composition of data to an input-processing interface. By supplying input of a non-standard or unexpected form an attacker can adversely impact the security of the target.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nD: 4\nR: 6\nE: 3\nA: 3\n\nSeverity: Medium",
-                  "mitigation": "Maßnahme: Integritätsschutz und strenge Eingabe-/Ausgabevalidierung für OTT-Nachrichten und Telefonnummern.\n\nUmsetzung der Maßnahme: \nTLS einsetzen, Strikte Eingabevalidierung, nur autorisierte internen Systeme dürfen das Gateway aufrufen\n\nDREA (reduziert)\nD: 3\nR: 2\nE: 2\nA: 2\n\nASVS V5 – Validation, Sanitization and Encoding Requirements (Input-Validierung), ASVS V9 – Communications Security: Transportverschlüsselung (TLS) für alle internen/externalen Verbindungen",
+                  "mitigation": "Maßnahme: Integritätsschutz und strenge Eingabe-/Ausgabevalidierung für OTT-Nachrichten und Telefonnummern.\n\nUmsetzung der Maßnahme: \nTLS einsetzen, Strikte Eingabevalidierung, nur autorisierte internen Systeme dürfen das Gateway aufrufen\n\nDREA (reduziert)\nD: 3\nR: 2\nE: 2\nA: 2\n\nASVS V5.1 - File Handling Documentation:  This section includes a requirement to document the expected characteristics of files accepted by the application, as a necessary precondition for developing and verifying relevant security checks.\nASVS V5.3 - File Storage:  This section includes requirements to prevent files from being inappropriately executed after upload, to detect dangerous content, and to avoid untrusted data being used to control where files are being\nstored.\nASVS V9.1 -  Token source and integrity: This section includes requirements to ensure that the token has been produced by a trusted party and has not beentampered with.\n\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 105,
-                  "score": ""
+                  "score": "9"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 3,
+                "tampering": 5,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -2421,6 +2430,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -2504,7 +2514,6 @@
               ]
             },
             "id": "4ec5a7a4-ceb8-48b5-8bc3-2f67c041ac85",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Allsecure, Mobilphone\nund OTT-Service",
@@ -2563,6 +2572,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -2646,7 +2656,6 @@
               ]
             },
             "id": "af42a09d-94d6-456c-872b-50245e3d2b99",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Allsecure Mail-Server",
@@ -2683,6 +2692,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -2766,7 +2776,6 @@
               ]
             },
             "id": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "SIEM-System",
@@ -2825,6 +2834,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -2908,7 +2918,6 @@
               ]
             },
             "id": "d4518546-fe36-4eee-ad62-7e8ca9c8ec01",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Telefon-Routing-Interface",
@@ -2945,6 +2954,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -3028,7 +3038,6 @@
               ]
             },
             "id": "a206d90e-d3ee-422a-84e8-cfff8b0eb0d2",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "Kunden-Telefonanbieter",
@@ -4212,6 +4221,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -4295,7 +4305,6 @@
               ]
             },
             "id": "c30d7c31-6ed7-40da-a86c-de71194e37dc",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Kundenkonto-DB / Login-Daten",
@@ -4358,6 +4367,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -4441,7 +4451,6 @@
               ]
             },
             "id": "df6763e9-fc63-4535-9cca-353ac2db6fd8",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Logging-DB (2-Faktor-Dienst)",
@@ -4502,6 +4511,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -4585,7 +4595,6 @@
               ]
             },
             "id": "59313419-f191-40ac-a667-a04e8b8189e1",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "SIEM-Events-DB",
@@ -4626,6 +4635,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -4709,7 +4719,6 @@
               ]
             },
             "id": "97394c39-97f4-4ac2-8b50-41094774ba69",
-            "zIndex": 14,
             "data": {
               "type": "tm.Store",
               "name": "Routing-Information-DB",
@@ -4750,6 +4759,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -4833,7 +4843,6 @@
               ]
             },
             "id": "a9a14cdc-3aeb-4317-8415-d3a555528f0a",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "Telefonnummern-DB (Provider)",
