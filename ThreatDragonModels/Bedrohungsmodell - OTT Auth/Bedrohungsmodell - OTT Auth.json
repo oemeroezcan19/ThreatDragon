@@ -4314,22 +4314,29 @@
                   "id": "1ccb6351-3fe7-4838-8505-a6150c6d93d8",
                   "title": "Abfluss von Kundendaten",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Die Kundenkonto-DB speichert Benutzerkonten, Telefonnummern und ggf. weitere personenbezogene Daten. Ein Angreifer, der eine Schwachstelle im Login-System oder 2-Faktor-Dienst (z.B. SQL Injection, unsichere Direktzugriffe, schwache Zugriffskontrollen) ausnutzt, kann direkt auf die Datenbank zugreifen oder Datenbank-Backups exfiltrieren.\n\nCAPEC-37: An attacker examines a target system to find sensitive data that has been embedded within it. This information can reveal confidential contents, such as account numbers or individual keys/credentials that can be used as an intermediate step in a larger attack.\n\nTA0010 - Exfiltration: The adversary is trying to steal data.\n\nD: 7\nR: 9\nE: 6\nA: 8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Die Kundenkonto-DB speichert Benutzerkonten, Telefonnummern und ggf. weitere personenbezogene Daten. Ein Angreifer, der eine Schwachstelle im Login-System oder 2-Faktor-Dienst (z.B. SQL Injection, unsichere Direktzugriffe, schwache Zugriffskontrollen) ausnutzt, kann direkt auf die Datenbank zugreifen oder Datenbank-Backups exfiltrieren.\n\nCAPEC-37: An attacker examines a target system to find sensitive data that has been embedded within it. This information can reveal confidential contents, such as account numbers or individual keys/credentials that can be used as an intermediate step in a larger attack.\n\nTA0010 - Exfiltration: The adversary is trying to steal data.\n\nD: 7\nR: 9\nE: 6\nA: 8\n\nSeverity: High",
+                  "mitigation": "Maßnahme: Konsistente Daten­schutz-Architektur, bedeutet starke Serverseitige Datenbank-Sicherheit und sichere Speicherung in der Mobile App\n\nUmsetzung der Maßnahme: Least-Privilege-Zugriff, verschlüsselte Backups\n\nDREA (reduziert): \nD: 5\nR: 5\nE: 3\nA: 5\n\nMASVS-STORAGE-1:  The app securely stores sensitive data.\nMASVS-STORAGE-2:  The app prevents leakage of sensitive data",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 107,
-                  "score": ""
+                  "score": "18"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -4476,13 +4483,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
