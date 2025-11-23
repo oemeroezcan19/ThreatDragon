@@ -1760,15 +1760,6 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -4469,22 +4460,29 @@
                   "id": "c27b2441-32f6-40f3-bb5c-84ab04a896dc",
                   "title": "Log-Manipulation / Spurenverwischung",
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Ein interner oder bereits eingeloggter Angreifer mit (zu) hohen Rechten auf dem Logsystem kann Logeinträge löschen, verändern oder fälschen. So können fehlgeschlagene Login-Versuche, ungewöhnliche OTT-Versände oder Policy-Verstöße nachträglich entfernt oder durch harmlose Events überschrieben werden. Dadurch wird es später schwierig oder unmöglich, dem Angreifer bestimmte Aktionen nachzuweisen (Verletzung der Nicht-Abstreitbarkeit).\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.\n\nTA0005 - Defense Evasion: The adversary is trying to avoid being detected.\n\nD: 8\nR: 8\nE: 7\nA: 8\n\n\n",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Ein interner oder bereits eingeloggter Angreifer mit (zu) hohen Rechten auf dem Logsystem kann Logeinträge löschen, verändern oder fälschen. So können fehlgeschlagene Login-Versuche, ungewöhnliche OTT-Versände oder Policy-Verstöße nachträglich entfernt oder durch harmlose Events überschrieben werden. Dadurch wird es später schwierig oder unmöglich, dem Angreifer bestimmte Aktionen nachzuweisen (Verletzung der Nicht-Abstreitbarkeit).\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.\n\nTA0005 - Defense Evasion: The adversary is trying to avoid being detected.\n\nD: 8\nR: 8\nE: 7\nA: 8\n\nSeverity: High\n",
+                  "mitigation": "Maßnahme: Harte Absicherung, Schutz und Überwachung der Logs.\n\nUmsetzung der Maßnahme: Logs remote auf einen zentralen, gehärteten Log-Server schreiben, Strenge Rollen & Berechtigungen, Integritätsschutz\n\nDREA (reduziert):\nD: 4\nR: 4\nE: 3\nA: 4\n\nASVS V7.2 - Fundamental Session Management Security:  This section satisfies the essential requirements of secure sessions by verifying that session tokens are securely generated and validated\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 106,
-                  "score": ""
+                  "score": "15"
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 2,
+                "repudiation": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
