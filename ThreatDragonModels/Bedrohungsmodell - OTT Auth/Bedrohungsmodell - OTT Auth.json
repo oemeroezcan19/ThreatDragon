@@ -1738,8 +1738,8 @@
           },
           {
             "position": {
-              "x": 30,
-              "y": 70
+              "x": -20,
+              "y": 80
             },
             "size": {
               "width": 1580,
@@ -2120,7 +2120,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Ein Angreifer erlangt gültige Zugangsdaten eines legitimen Nutzers (z.B. über Phishing oder Credential-Stuffing) und meldet sich damit beim Login-System an. Aus Sicht des Systems erscheint der Angreifer als legitimer Benutzer und kann den 2-Faktor-Prozess anstoßen und ggf. Kontodaten einsehen oder verändern.\n\nCAPEC-151: Identity Spoofing refers to the action of assuming (i.e., taking on) the identity of some other entity (human or non-human) and then using that identity to accomplish a goal. An adversary may craft messages that appear to come from a different principle or use stolen / spoofed authentication credentials.\n\nTA0001 - Initial access: The adversary is trying to get into your network.",
+                  "description": "Ein Angreifer erlangt gültige Zugangsdaten eines legitimen Nutzers (z.B. über Phishing oder Credential-Stuffing) und meldet sich damit beim Login-System an. Aus Sicht des Systems erscheint der Angreifer als legitimer Benutzer und kann den 2-Faktor-Prozess anstoßen und ggf. Kontodaten einsehen oder verändern.\n\nCAPEC-151: Identity Spoofing refers to the action of assuming (i.e., taking on) the identity of some other entity (human or non-human) and then using that identity to accomplish a goal. An adversary may craft messages that appear to come from a different principle or use stolen / spoofed authentication credentials.\n\nTA0001 - Initial access: The adversary is trying to get into your network.\n\nD: 4\nR: 6\nE: 6\nA: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2129,20 +2129,13 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2387,9 +2380,9 @@
                   "id": "b853a2cb-f2a0-41d7-84a7-d11d78531c41",
                   "title": "Manipulation des OTT-Inhalts",
                   "status": "Open",
-                  "severity": "Low",
+                  "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Das Telefonnummern-API-Gateway nimmt vom 2-Faktor-Dienst OTT-Nachrichten und Ziel-Telefonnummern entgegen und leitet sie an den Telco-Dienst weiter. Falls hier Eingaben nicht korrekt validiert oder Verbindungen unzureichend geschützt sind, kann ein Angreifer (z.B. durch kompromittierten internen Account oder AiTM im internen Netz) OTT-Inhalte oder Zielnummern verändern, bevor sie weitergeleitet werden. Dadurch wird etwa ein anderer Empfänger mit einem manipulierten OTT versorgt oder der OTT-Text wird so verändert, dass der Nutzer getäuscht wird.\n\nCAPEC-153: An attacker exploits a weakness in input validation by controlling the format, structure, and composition of data to an input-processing interface. By supplying input of a non-standard or unexpected form an attacker can adversely impact the security of the target.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\n",
+                  "description": "Das Telefonnummern-API-Gateway nimmt vom 2-Faktor-Dienst OTT-Nachrichten und Ziel-Telefonnummern entgegen und leitet sie an den Telco-Dienst weiter. Falls hier Eingaben nicht korrekt validiert oder Verbindungen unzureichend geschützt sind, kann ein Angreifer (z.B. durch kompromittierten internen Account oder AiTM im internen Netz) OTT-Inhalte oder Zielnummern verändern, bevor sie weitergeleitet werden. Dadurch wird etwa ein anderer Empfänger mit einem manipulierten OTT versorgt oder der OTT-Text wird so verändert, dass der Nutzer getäuscht wird.\n\nCAPEC-153: An attacker exploits a weakness in input validation by controlling the format, structure, and composition of data to an input-processing interface. By supplying input of a non-standard or unexpected form an attacker can adversely impact the security of the target.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nD: 4\nR: 6\nE: 3\nA: 3",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2399,7 +2392,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -2531,7 +2524,7 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Denial of service",
-                  "description": "Der Allsecure-OTT-Service übernimmt das Versenden von OTT-Nachrichten an die Mobiltelefone. Ein Angreifer kann durch massive Anzahl gefälschter Auth-Anfragen oder durch speziell gestaltete, besonders ressourcenintensive Requests den OTT-Service überlasten (z.B. viele parallele OTT-Anfragen mit teuren Datenbank-Operationen).\n\nCAPEC-130: An adversary causes the target to allocate excessive resources to servicing the attackers' request, thereby reducing the resources available for legitimate services and degrading or denying services. Usually, this attack focuses on memory allocation, but any finite resource on the target could be the attacked, including bandwidth, processing cycles, or other resources. This attack does not attempt to force this allocation through a large number of requests (that would be Resource Depletion through Flooding) but instead uses one or a small number of requests that are carefully formatted to force the target to allocate excessive resources to service this request(s). Often this attack takes advantage of a bug in the target to cause the target to allocate resources vastly beyond what would be needed for a normal request.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.",
+                  "description": "Der Allsecure-OTT-Service übernimmt das Versenden von OTT-Nachrichten an die Mobiltelefone. Ein Angreifer kann durch massive Anzahl gefälschter Auth-Anfragen oder durch speziell gestaltete, besonders ressourcenintensive Requests den OTT-Service überlasten (z.B. viele parallele OTT-Anfragen mit teuren Datenbank-Operationen).\n\nCAPEC-130: An adversary causes the target to allocate excessive resources to servicing the attackers' request, thereby reducing the resources available for legitimate services and degrading or denying services. Usually, this attack focuses on memory allocation, but any finite resource on the target could be the attacked, including bandwidth, processing cycles, or other resources. This attack does not attempt to force this allocation through a large number of requests (that would be Resource Depletion through Flooding) but instead uses one or a small number of requests that are carefully formatted to force the target to allocate excessive resources to service this request(s). Often this attack takes advantage of a bug in the target to cause the target to allocate resources vastly beyond what would be needed for a normal request.\n\nTA0040 - Impact: The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nD: 10\nR: 9\nE: 8\nA: 10",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2544,7 +2537,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2793,7 +2786,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Das SIEM sammelt sicherheitsrelevante Logs aus dem 2-Faktor-Dienst und dem OTT-Service und erzeugt wöchentliche Berichte ans Management. Wenn ein Angreifer zunächst mit einem normalen Benutzer-Account auf das SIEM zugreift (z.B. ein kompromittierter Admin-Assistent) und anschließend eine Schwachstelle in der SIEM-Software ausnutzt, kann er seine Rechte auf „SIEM-Admin“ oder sogar System-Root erhöhen.\n\nCAPEC-233: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nTA0004 - Privilege Escalation. The adversary is trying to gain higher-level permissions.\n\n",
+                  "description": "Das SIEM sammelt sicherheitsrelevante Logs aus dem 2-Faktor-Dienst und dem OTT-Service und erzeugt wöchentliche Berichte ans Management. Wenn ein Angreifer zunächst mit einem normalen Benutzer-Account auf das SIEM zugreift (z.B. ein kompromittierter Admin-Assistent) und anschließend eine Schwachstelle in der SIEM-Software ausnutzt, kann er seine Rechte auf „SIEM-Admin“ oder sogar System-Root erhöhen.\n\nCAPEC-233: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nTA0004 - Privilege Escalation. The adversary is trying to gain higher-level permissions.\n\nD: 10\nR: 4\nE: 2\nA: 10\n\n",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2807,7 +2800,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -4323,7 +4316,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "Die Kundenkonto-DB speichert Benutzerkonten, Telefonnummern und ggf. weitere personenbezogene Daten. Ein Angreifer, der eine Schwachstelle im Login-System oder 2-Faktor-Dienst (z.B. SQL Injection, unsichere Direktzugriffe, schwache Zugriffskontrollen) ausnutzt, kann direkt auf die Datenbank zugreifen oder Datenbank-Backups exfiltrieren.\n\nCAPEC-37: An attacker examines a target system to find sensitive data that has been embedded within it. This information can reveal confidential contents, such as account numbers or individual keys/credentials that can be used as an intermediate step in a larger attack.\n\nTA0010 - Exfiltration: The adversary is trying to steal data.",
+                  "description": "Die Kundenkonto-DB speichert Benutzerkonten, Telefonnummern und ggf. weitere personenbezogene Daten. Ein Angreifer, der eine Schwachstelle im Login-System oder 2-Faktor-Dienst (z.B. SQL Injection, unsichere Direktzugriffe, schwache Zugriffskontrollen) ausnutzt, kann direkt auf die Datenbank zugreifen oder Datenbank-Backups exfiltrieren.\n\nCAPEC-37: An attacker examines a target system to find sensitive data that has been embedded within it. This information can reveal confidential contents, such as account numbers or individual keys/credentials that can be used as an intermediate step in a larger attack.\n\nTA0010 - Exfiltration: The adversary is trying to steal data.\n\nD: 7\nR: 9\nE: 6\nA: 8",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -4334,7 +4327,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             }
@@ -4469,7 +4462,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Repudiation",
-                  "description": "Ein interner oder bereits eingeloggter Angreifer mit (zu) hohen Rechten auf dem Logsystem kann Logeinträge löschen, verändern oder fälschen. So können fehlgeschlagene Login-Versuche, ungewöhnliche OTT-Versände oder Policy-Verstöße nachträglich entfernt oder durch harmlose Events überschrieben werden. Dadurch wird es später schwierig oder unmöglich, dem Angreifer bestimmte Aktionen nachzuweisen (Verletzung der Nicht-Abstreitbarkeit).\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.\n\nTA0005 - Defense Evasion: The adversary is trying to avoid being detected.\n\n\n\n",
+                  "description": "Ein interner oder bereits eingeloggter Angreifer mit (zu) hohen Rechten auf dem Logsystem kann Logeinträge löschen, verändern oder fälschen. So können fehlgeschlagene Login-Versuche, ungewöhnliche OTT-Versände oder Policy-Verstöße nachträglich entfernt oder durch harmlose Events überschrieben werden. Dadurch wird es später schwierig oder unmöglich, dem Angreifer bestimmte Aktionen nachzuweisen (Verletzung der Nicht-Abstreitbarkeit).\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.\n\nTA0005 - Defense Evasion: The adversary is trying to avoid being detected.\n\nD: 8\nR: 8\nE: 7\nA: 8\n\n\n",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -4479,7 +4472,7 @@
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
