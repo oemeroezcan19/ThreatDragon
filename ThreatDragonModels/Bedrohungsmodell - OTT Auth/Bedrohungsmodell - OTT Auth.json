@@ -3573,13 +3573,13 @@
             "data": {
               "type": "tm.Flow",
               "name": "10. Zustellstatus / Quittung",
-              "description": "",
+              "description": "Standardverfahren",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
@@ -3618,13 +3618,13 @@
             "data": {
               "type": "tm.Flow",
               "name": "11. OTT-Nachricht ans Handy",
-              "description": "",
+              "description": "Standardverfahren",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
@@ -3644,6 +3644,10 @@
             "vertices": [
               {
                 "x": 740,
+                "y": 1000
+              },
+              {
+                "x": 530,
                 "y": 1000
               },
               {
