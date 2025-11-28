@@ -3476,13 +3476,13 @@
             "data": {
               "type": "tm.Flow",
               "name": "8. Weiterleitung OTT (Telefonnummer, OTT-Text, Provider-Info)",
-              "description": "",
+              "description": "Standardverfahren eingesetzt",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
@@ -4186,6 +4186,57 @@
               "port": "253e72e8-a1e8-429a-be59-b159a8c511eb"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Logexport OTT Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Logexport OTT Service"
+            ],
+            "id": "25aecdd3-6e16-4c67-9d61-29cf2b192470",
+            "source": {
+              "cell": "4ec5a7a4-ceb8-48b5-8bc3-2f67c041ac85",
+              "port": "07f6de36-4a63-4f98-b75e-5a0feb26b3d6"
+            },
+            "target": {
+              "cell": "113bd462-c5fd-4a4b-93b2-9adb4a12d341",
+              "port": "96fdceaf-896d-46b6-bdc6-0063c983704a"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 630
+              }
+            ]
           },
           {
             "position": {
